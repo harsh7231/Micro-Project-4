@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pwdstyle.css" class="rel">
+  <title>Password Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h2 class="pwd-title">Password Generator</h2>
+        <div class="result">
+            <div class="result__viewbox" id="password" >P4$5W0rD!</div>
+            <img class="copy-btn" src="images/copy-btn.svg"/>
+        </div>
+        
+    
+        <div class="main-pwd">
+            
+                <div class="length_title" data-length='0'>Character Length</div>
+                <span id="slider-value">0</span>
+                <input  type="range" id="slider" min="0" max="10"  value="0" />
+            <div class="uppercase">
+                <input  type="checkbox" id="uppercase"  />
+                <label for="uppercase">Include Uppercase </label>
+            </div>
+            <div class="lowercase">
+                <input  type="checkbox" id="lowercase" />
+                <label for="lowercase">Include Lowercase </label>
+            </div>
+            <div class="number">
+                <input  type="checkbox" id="number"  />
+                <label for="number">Include Numbers</label>
+            </div>
+            <div class="symbol">
+                <input  type="checkbox" id="symbol" />
+                <label for="symbol">Include Symbols</label>
+            </div>
+            <div class="rating">
+                <div class="strength-rating">STRENGTH</div>
+                <div class="rating-bars">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <button onclick="generatePassword()" class="btn-generate" id="generate">GENERATE  -></button>
+        </div>
+        <script src="pwdindex.js"></script>
+    </div>
+</body>
+</html>
